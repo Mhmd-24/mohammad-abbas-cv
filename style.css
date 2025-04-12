@@ -41,10 +41,12 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 header{
@@ -52,8 +54,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #d5dde7;
-    color: #3e4949;
+    background-color: #7AC6D2;
+    color: black;
     padding: 0px 50px;
 
 }
@@ -73,7 +75,7 @@ nav{
 }
 
 #nav-links a{
-    color: #3e4949;
+    
     font-size: 18px;
 }
 
@@ -83,7 +85,7 @@ nav{
 }
 
 #nav-links a:hover {
-    color: #545f5f;
+    color: #3A59D1;
 }
 
 #personal-info{
@@ -100,7 +102,9 @@ nav{
 #img-container img{
     width: 450px;
     height: 450px;
-    border-radius: 25px;
+    border: 1px solid #7AC6D2;
+    box-shadow: 0px 0px 5px #7AC6D2;
+    border-radius: 50%;
     animation: 3s slide-right;
 }
 
@@ -108,19 +112,21 @@ nav{
     padding: 20px 75px 0 25px;
     animation: 3s slide-left;
     flex: 2;
+    color: #7AC6D2;
 }
 
 #summary p:nth-of-type(1){
     margin-bottom: -10px;
     padding: 0;
-    color: #3e4949;
+    color: #3A59D1;
     font-size: 14px;
 }
 
 #summary hr{
-    border: 1px solid #1b9e9e;
+    border: 1px solid #3A59D1;
     width: 50%;
     margin: 0;
+    color: #7AC6D2;
 }
 
 #summary p:nth-of-type(2){
@@ -129,16 +135,19 @@ nav{
 }
 
 #info-btn{
-    background-color: #545f5f;
-    color: #3e4949;
+    background-color: #3A59D1;
     padding: 20px;
     font-size: 18px;
-    border: 1px solid #545f5f;
+    border: 2px solid #3A59D1;
     border-radius: 15px;
 }
 
+#info-btn:hover{
+    background-color: white;
+}
+
 #info-btn a{
-    color: #d5dde7;
+    color: black;
 }
 
 #education{
@@ -152,7 +161,7 @@ nav{
 }
 
 #education hr{
-    border: 1px solid #d5dde7;
+    border: 1px solid black;
     width: 60%;
 }
 
@@ -165,17 +174,58 @@ nav{
     margin-top: 50px;
 }
 
-#objective{
-    background-color: #3e4949;
-    color: white;
+.objective{
+    background-color: black;
+    color: #3D90D7;
     padding: 50px 25px;
     font-size: 16px;
     flex: 1;
-    border: 1px solid white;
-    box-shadow: 0px 0px 5px white;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px #3A59D1;
     animation: 3s slide-up;
 }
 
-#objective:hover{
+.objective:hover{
     scale: 1.1;
+}
+
+#experience{
+    padding: 100px 50px;
+    background-color: #7AC6D2;
+}
+
+#experience h2{
+    text-align: center;
+}
+
+#experience hr {
+    text-align: center;
+    border: 1px solid #3e4949;
+    width: 50%;
+}
+
+#works{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 40px;
+    padding: 50px;
+}
+
+.work{
+    padding: 25px 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+    max-height: 100%;
+    background-color: #3D90D7;
+}
+
+.work:hover{
+    scale: 1.1;
+}
+
+.place-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
