@@ -135,15 +135,16 @@ nav{
 }
 
 #info-btn{
-    background-color: #3A59D1;
+    background-color: #7ac6d3;
     padding: 20px;
     font-size: 18px;
-    border: 2px solid #3A59D1;
+    border: 2px solid #7ac6d3;
     border-radius: 15px;
 }
 
 #info-btn:hover{
     background-color: white;
+    transition-duration: 0.5s;
 }
 
 #info-btn a{
@@ -228,4 +229,33 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#contact-info{
+    color: white;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+#contact-info h2{
+    color: #7ac6d3;
+    font-size: 36px;
+}
+
+#contact-info img{
+    width: 96px;
+}
+
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+footer{
+    background-color: #7ac6d3;
+    padding: 25px;
+    text-align: center;
 }
