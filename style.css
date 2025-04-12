@@ -259,3 +259,92 @@ footer{
     padding: 25px;
     text-align: center;
 }
+
+
+@media only screen and (max-width: 768px){
+
+    header h1{
+        display: none;
+    }
+
+    nav {
+        margin-right: 0;
+    }
+
+    #nav-links {
+        margin-left: 0px;
+    }
+
+    #personal-info {
+        flex-direction: column;
+        padding: 35px;
+    }
+
+    #img-container {
+        flex: 0;
+        padding: 10px;
+    }
+
+    #img-container img {
+        width: 400px;
+        height: 400px;
+    }
+
+    #summary {
+        padding: 0 10px;
+        flex: 1;
+    }
+
+    #summary hr {
+        width: 75%;
+    }
+
+    #info-btn {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #education {
+        padding: 75px 50px;
+    }
+
+    #education hr {
+        border: 1px solid white;
+        width: 80%;
+    }
+
+    #objectives {
+        flex-direction: column;
+        row-gap: 15px;
+        padding: 0 50px;
+    }
+
+    .objective {
+        padding: 50px;
+    }
+
+    #experience {
+        padding: 75px 50px;
+        background-color: #7AC6D2;
+    }
+
+    #experience hr {
+        width: 60%;
+    }
+
+    #works {
+        flex-direction: column;
+        row-gap: 25px;
+        padding: 25px;
+    }
+
+    .work {
+        padding: 25px;
+    }
+
+    #info {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+}
