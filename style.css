@@ -20,21 +20,21 @@
 
 @keyframes slide-up {
     from {
-        margin-top: 100%;
+        transform: translateY(75%);
     }
 
     to {
-        margin-top: 0%;
+        transform: translateY(0%);
     }
 }
 
 @keyframes slide-down {
     from {
-        margin-bottom: 100%;
+        transform: translateY(-75%);
     }
 
     to {
-        margin-bottom: 0%;
+        transform: translateY(0);
     }
 }
 
@@ -141,3 +141,41 @@ nav{
     color: #d5dde7;
 }
 
+#education{
+    background-image: url(./Images/LU.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 125px 50px;
+    color: white;
+    text-align: center;
+}
+
+#education hr{
+    border: 1px solid #d5dde7;
+    width: 60%;
+}
+
+#objectives{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 25px;
+    padding: 0 50px;
+    margin-top: 50px;
+}
+
+#objective{
+    background-color: #3e4949;
+    color: white;
+    padding: 50px 25px;
+    font-size: 16px;
+    flex: 1;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px white;
+    animation: 3s slide-up;
+}
+
+#objective:hover{
+    scale: 1.1;
+}
